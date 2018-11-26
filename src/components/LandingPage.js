@@ -20,8 +20,8 @@ export default class Landing extends Component {
 
               <p><span>Ruby on Rails</span>  |  <span>React</span>  |  <span>HTML/CSS</span>  | <span>JavaScript</span>  |  <span>Bootstrap</span></p>
               <div className="social-links">
-                <a href="https://www.linkedin.com/in/william-kontos-31098454/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/williamkontos" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/william-kontos-31098454/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                <a href="https://github.com/williamkontos" target="_blank"><i className="fab fa-github-square"></i></a>
               </div>
             </div>
           </Cell>

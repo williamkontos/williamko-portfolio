@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
-import './App.css';
-import './landingpage.css';
-import './projects.css';
+import './css/App.css';
+import './css/landingpage.css';
+import './css/projects.css';
+import './css/contact.css';
 import Main from './components/Main'
 import { Link } from 'react-router-dom'
 
