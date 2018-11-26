@@ -1,0 +1,9 @@
+.ruby-projects {
+  display: flex;
+  flex-direction: row;
+  margin: 5em;
+}
+
+.whereto-card, .nba-card {
+  flex-basis: 25%;
+}

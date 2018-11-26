@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
 import './App.css';
 import './landingpage.css';
+import './projects.css';
 import Main from './components/Main'
 import { Link } from 'react-router-dom'
 
