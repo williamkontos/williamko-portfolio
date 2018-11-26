@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardText, CardMenu, IconButton } from 'react-mdl'
 import whereto from '../images/WhereTo_Logo.svg'
 import nba from '../images/nba-standings-home.png'
+import vote from '../images/voter-sim.png'
+
 
 
 export default class Projects extends Component {
@@ -46,9 +48,29 @@ export default class Projects extends Component {
              )
     } else {
       return (
-                <div>
-                  <h1>Coming Soon!</h1>
-                </div>
+              <div className="js-projects">
+              <Card className="votersim-card" shadow={5} style={ {minWidth: '450', margin: 'auto'} }>
+                <CardTitle style={{color: 'black', height: '176px', background: `url(${vote}) center / cover`}}></CardTitle>
+                <CardText>A voter simulation application using JS object oriented principles and jQuery for user interaction.</CardText>
+                <CardActions border>
+                  <a href="https://github.com/williamkontos/voter-sim" target="_blank"><Button colored>GitHub</Button></a>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                  <IconButton name="share"/>
+                </CardMenu>
+              </Card>
+
+              <Card className="mortalkombat-card" shadow={5} style={ {minWidth: '450', margin: 'auto'} }>
+                <CardTitle style={{color: 'black', height: '176px', background: 'url(https://ballzbeatz.com/wp-content/uploads/2018/01/Mortal-Kombat-Logo-Vinyl-Decal-Sticker.jpg) center / cover'}}></CardTitle>
+                <CardText>A command-line based adventure/fighting game based in the Mortal Kombat universe.</CardText>
+                <CardActions border>
+                  <a href="https://github.com/williamkontos/mortal-kombat" target="_blank"><Button colored>GitHub</Button></a>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                  <IconButton name="share"/>
+                </CardMenu>
+              </Card>
+            </div>
              )
     }
   }

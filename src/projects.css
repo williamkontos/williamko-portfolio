@@ -7,3 +7,13 @@
 .whereto-card, .nba-card {
   flex-basis: 25%;
 }
+
+.js-projects {
+  display: flex;
+  flex-direction: row;
+  margin: 5em;
+}
+
+.votersim-card, .mortalkombat-card {
+  flex-basis: 25%;
+}
