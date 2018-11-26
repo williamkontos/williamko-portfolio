@@ -1,4 +1,4 @@
-# William Kontos' Portfolio Site
+# My Portfolio Site
 
 _Under construction_
 
