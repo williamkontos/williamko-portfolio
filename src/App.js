@@ -4,6 +4,7 @@ import './css/App.css';
 import './css/landingpage.css';
 import './css/projects.css';
 import './css/contact.css';
+import './css/resume.css';
 import Main from './components/Main'
 import { Link } from 'react-router-dom'
 
@@ -12,10 +13,9 @@ class App extends Component {
     return (
       <div className="demo-big-content">
           <Layout>
-              <Header className="header-color" title="My Portfolio" scroll>
+              <Header className="header-color" title={<Link style={ {textDecoraton: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
                   <Navigation>
                       <Link to="/">Home</Link>
-                      <Link to="/aboutme">About Me</Link>
                       <Link to="/resume">Resume</Link>
                       <Link to="/projects">Projects</Link>
                       <Link to="/contact">Contact</Link>
@@ -23,7 +23,7 @@ class App extends Component {
               </Header>
               <Drawer title="williamko">
                   <Navigation>
-                      <Link to="/aboutme">About Me</Link>
+                      <Link to="/">Home</Link>
                       <Link to="/resume">Resume</Link>
                       <Link to="/projects">Projects</Link>
                       <Link to="/contact">Contact</Link>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Mailto from 'react-protected-mailto'
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl'
-import avatar from '../images/th_Copy of WILLIAM.jpg'
+import brandy from '../images/brandy.jpg'
 
 export default class Contact extends Component {
   render() {
@@ -10,8 +10,9 @@ export default class Contact extends Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>William Kontos</h2>
+            <h6>(Brandy tax)</h6>
             <img 
-              src={avatar}
+              src={brandy}
               alt="William Contact Avatar"
               className="contact-image animated fadeIn"
             />
