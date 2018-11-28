@@ -108,3 +108,127 @@ q {
 .progress {
   width: 80%;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .resume {
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/grey-water.jpg), 
+    #0F2027;  /* fallback for old browsers */
+    background-image: url(../images/grey-water.jpg),
+      -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to right, #2C5364, #203A43, #0F2027),
+      url(../images/grey-water.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .resume-right-col {
+    background: white;
+    opacity: .9;
+    color: black;
+    border-radius: 15px;
+    padding: .2em;
+    box-shadow: 1px 4px 30px rgb(0, 0, 0);
+    animation: float 0s ease-in-out infinite;
+  }
+
+  .resume-right-col h2 {
+    font-size: 2em;
+    margin-bottom: -1em;
+    text-align: center;
+  }
+
+  .start-year {
+    font-size: 1.2em;
+    display: none;
+    margin-top: -2em;
+    margin-bottom: -2em;
+    text-align: center;
+  }
+
+  .resume-left-col {
+    margin-left: 1em;
+  }
+  
+  .resume-left-col img {
+    height: auto;
+    display: none;
+    width: 15em;
+    margin-top: 5em;
+    border-radius: 5%;
+    box-shadow: 1px 4px 30px rgb(0, 0, 0);
+  }
+  
+  .resume-titles {
+    padding: 0 .15em 0 .15em;
+    color: black;
+    margin-top: 5em;
+    text-align: center;
+  }
+  
+  .about-me {
+    font-size: 1.25em;
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-bottom: -2em;
+    padding-right: 3em;
+  }
+  
+  .resume-titles h4 {
+    margin-left: .25em;
+  }
+  
+  .my-goal {
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-bottom: -2em;
+    padding-right: 3em;
+  }
+  
+  .quote {
+    margin-top: 2em;
+    padding: .15em;
+    text-align: center;
+  }
+  
+  .quote p {
+    margin-top: .5em;
+    font-size: 2em;
+  }
+  
+  .above-about {
+    margin-top: 3em;
+  }
+  
+  .under-about {
+    margin-top: 4.5em;
+  }
+  
+  .school-name {
+    margin: 0;
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: -1em;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin-top: -1em;
+    margin-bottom: .25em;
+  }
+  
+  .progress {
+    width: 100%;
+  }
+}
