@@ -80,10 +80,11 @@ export default class Projects extends Component {
       <div className="category-tabs animated fadeIn">
         <Tabs activeTab={this.state.activeTab} 
               onChange={(tabId) => this.setState({ activeTab: tabId })} 
-              ripple>
-          <Tab>Ruby on Rails</Tab>
-          <Tab>React</Tab>
-          <Tab>JavaScript</Tab>
+              ripple
+        >
+          <Tab className="language-tabs">Ruby on Rails</Tab>
+          <Tab className="language-tabs">React</Tab>
+          <Tab className="language-tabs">JavaScript</Tab>
         </Tabs>
 
           <Grid className="projects-grid">

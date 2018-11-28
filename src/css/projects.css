@@ -4,8 +4,30 @@
   margin: 5em;
 }
 
+.language-tabs {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .whereto-card, .nba-card {
   flex-basis: 25%;
+  border-radius: 10px;
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 2px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 2px rgba(0,0,0,0.2);
+		transform: translatey(-8px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 3px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 .js-projects {
@@ -16,4 +38,25 @@
 
 .votersim-card, .mortalkombat-card {
   flex-basis: 25%;
+  border-radius: 10px;
+  animation: float 3.5s ease-in-out infinite;
 }
+
+.category-tabs {
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/grey-water.jpg), 
+  #0F2027;  /* fallback for old browsers */
+  background-image: url(../images/grey-water.jpg),
+    -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #2C5364, #203A43, #0F2027),
+    url(../images/grey-water.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+  position: fixed;
+
+  left:0;
+  width: 100%;
+  height: 100%;
+  }

@@ -1,7 +1,14 @@
 .landing-grid {
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/grey-water.jpg), 
+  #0F2027;  /* fallback for old browsers */
+  background-image: url(../images/grey-water.jpg),
+    -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #2C5364, #203A43, #0F2027),
+    url(../images/grey-water.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: fixed;
   top: 0;
@@ -20,30 +27,47 @@
 }
 
 .banner-text {
-  background-color: black;
-  opacity: .7;
+  background-color: white;
+  opacity: .8;
   width: 75%;
   margin: auto;
   border-radius:10px;
+  transform: translatey(0px);
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 2px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 2px rgba(0,0,0,0.2);
+		transform: translatey(-8px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 3px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 .banner-text h1 {
   font-size: 66px;
   font-weight: bold;
-  color: white;
+  color: black;
   padding-top: 5px;
 }
 
 .banner-text p {
   font-size: 1.6em;;
   font-weight: bold;
-  color: white;
+  color: black;
   margin: 1em;
   padding-bottom: .5em;
 }
 
 .banner-text hr {
-  border-top: 5px dotted white;
+  border-top: 5px dotted black;
   width: 50%;
   margin: auto;
 }
@@ -60,7 +84,7 @@ p span {
 }
 
 .social-links i {
-  color: white;
+  color: black;
   font-size: 5em;
   padding: 8px;
 }

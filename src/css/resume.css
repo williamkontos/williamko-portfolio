@@ -1,22 +1,29 @@
 .resume {
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/grey-water.jpg), 
+  #0F2027;  /* fallback for old browsers */
+  background-image: url(../images/grey-water.jpg),
+    -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #2C5364, #203A43, #0F2027),
+    url(../images/grey-water.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 100%;
 }
 
 .resume-right-col {
   background: white;
+  opacity: .9;
   color: black;
   border-radius: 15px;
   padding: 2em;
   box-shadow: 1px 4px 30px rgb(0, 0, 0);
-
 }
 
 .resume-left-col {
-  text-align: center;
+  margin-left: 1em;
 }
 
 .resume-left-col img {
@@ -27,15 +34,47 @@
 }
 
 .resume-titles {
-  text-align: center;
+  padding: 0 1em 0 1em;
   color: white;
   margin-top: 4em;
 }
 
-.resume-titles p {
-  font-size: 1.16em;
-  padding: 0 3em 0 3em;
+.about-me {
+  font-size: 1.25em;
   margin-top: 4em;
+  padding-right: 3em;
+}
+
+.resume-titles h4 {
+  margin-left: .25em;
+}
+
+.my-goal {
+  font-size: 1.25em;
+  margin-top: 2.5em;
+  padding-right: 3em;
+}
+
+.quote {
+  margin-top: 7em;
+  text-align: center;
+}
+
+.quote p {
+  margin-top: .5em;
+  font-size: 2em;
+}
+
+q {
+  font-size: 2.5em;
+}
+
+.above-about {
+  margin-top: 3em;
+}
+
+.under-about {
+  margin-top: 4.5em;
 }
 
 .school-name {
@@ -47,7 +86,6 @@
   flex-direction: column;
   font-size: 1.3em;
   margin-bottom: .25em;
-  
 }
 
 .progress {

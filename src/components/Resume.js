@@ -20,17 +20,38 @@ export default class Resume extends Component {
                 <h2>William Kontos</h2>
                 <h4>Web Developer</h4>
               
-                <hr style={ {borderTop: '3px solid #2C5364'} }/>
-                <p>
-                  Hello there, <strong style={ {color: 'white'} }>I'm William.</strong>
+                <hr className="above-about" style={ {borderTop: '3px solid #2C5364'} }/>
+                
+                <p className="about-me">
+                  Hello there, <strong>I'm William.</strong>
                   <br/>
-                  I'm a life-long musician with a B.S. in audio engineering. 
-                  My love of digital audio and data led me to pursue a career in software engineering and web development. 
-                  I've learned that through hard work and perseverance, any goal can be achieved.
+                  I'm a life-long musician with a B.S. in audio engineering.<br/>
+                  My love of digital audio and data led me to pursue a career in software engineering and web development.<br/> 
+                  I've learned that through hard work and perseverance, <br/> 
+                  any goal can be achieved.
                 </p>
+
+                <hr className="under-about" style={ {borderTop: '3px solid #2C5364'} }/>
+
+                <h4>My Goal</h4>
+                <p className="my-goal">
+                  I aspire to <strong>design and build interactive and elegant web apps.</strong>
+                  <br/> 
+                  The desire to create something from nothing drives me to no end. <br/>
+                  Picking the right tools for the job and learning by getting my hands dirty is has proven to be the most effective path to improvement in my development journey. 
+                </p>
+                <hr className="under-about" style={ {borderTop: '3px solid #2C5364'} }/>
+                
+                <div className="quote">
+                  <q>Continuous improvement is better than delayed perfection.</q>
+                    <br/>
+                    <p>- Mark Twain</p>
+                </div>
+
               </div>
             </Cell>
             <Cell className="resume-right-col" col={8}>
+
               <h2>Education</h2>
               <Education 
                 startYear={"September 2018"} 
@@ -47,6 +68,7 @@ export default class Resume extends Component {
                 schoolDescription={"Obtained my BS in the recording arts and audio engineering."}
               />
               <hr style={ {borderTop: '3px solid #2C5364'} }/>
+
               <h2>Experience</h2>
               <Experience 
                 startYear={"January 2018"} 
@@ -64,7 +86,16 @@ export default class Resume extends Component {
                 location={"Fort Lauderdale, FL"}
                 jobDescription={"With a focus in short form advertising, I recorded, edited and mixed countless TV and radio spots. All while hitting hard deadlines and maintaining excellent customer service."}
               />
+              <Experience 
+                startYear={"August 2014"} 
+                endYear={"July 2015"} 
+                jobName={"Chewy.com"}
+                jobTitle={"Fraud Lead & Trainer"}
+                location={"Dania Beach, FL"}
+                jobDescription={"Scanned customer orders and prevented fraudulent purchases. I also trained new hires in customer service and reporting suspicious activity."}
+              />
               <hr style={ {borderTop: '3px solid #2C5364'} }/>
+
               <h2>Skills</h2>
               <Skills
                 skill={"HTML/CSS"}
