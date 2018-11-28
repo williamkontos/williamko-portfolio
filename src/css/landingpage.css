@@ -98,30 +98,31 @@ p span {
   }
   
   .banner-text {
-    background-color: black;
+    background-color: white;
     opacity: .7;
     width: 100%;
     margin: auto;
     border-radius:10px;
   }
   
+  
   .banner-text h1 {
     font-size: 40px;
     padding-top: .5em;
     margin-bottom: .5em;
     font-weight: bold;
-    color: white;
+    color: black;
   }
   
   .banner-text p {
     font-size: 1.5em;;
     font-weight: bold;
-    color: white;
+    color: black;
     margin: 1em;
   }
   
   .banner-text hr {
-    border-top: 3px dotted white;
+    border-top: 3px dotted black;
     width: 50%;
     margin: auto;
   }
@@ -138,7 +139,7 @@ p span {
   }
   
   .social-links i {
-    color: white;
+    color: black;
     font-size: 3em;
     padding: 8px;
   }
@@ -154,11 +155,12 @@ p span {
   }
   
   .banner-text {
-    background-color: black;
-    opacity: .7;
+    background-color: white;
+    opacity: .8;
     width: 100%;
-    margin: auto;
-    border-radius: 10px;
+    border-radius:10px;
+    transform: translatey(0px);
+    animation: float 0s ease-in-out infinite;
   }
   
   .banner-text h1 {
@@ -166,18 +168,18 @@ p span {
     padding-top: .5em;
     margin-bottom: .5em;
     font-weight: bold;
-    color: white;
+    color: black;
   }
   
   .banner-text p {
     font-size: .99em;;
     font-weight: bold;
-    color: white;
+    color: black;
     margin: 1em;
   }
   
   .banner-text hr {
-    border-top: 3px dotted white;
+    border-top: 3px dotted black;
     width: 50%;
     margin: auto;
   }
@@ -194,7 +196,7 @@ p span {
   }
   
   .social-links i {
-    color: white;
+    color: black;
     font-size: 3em;
     padding: 8px;
   }
