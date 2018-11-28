@@ -98,7 +98,7 @@ p span {
   }
   
   .banner-text {
-    background-color: black;
+    background-color: white;
     opacity: .7;
     width: 100%;
     margin: auto;
@@ -111,18 +111,18 @@ p span {
     padding-top: .5em;
     margin-bottom: .5em;
     font-weight: bold;
-    color: white;
+    color: black;
   }
   
   .banner-text p {
     font-size: 1.5em;;
     font-weight: bold;
-    color: white;
+    color: black;
     margin: 1em;
   }
   
   .banner-text hr {
-    border-top: 3px dotted white;
+    border-top: 3px dotted black;
     width: 50%;
     margin: auto;
   }
@@ -139,7 +139,7 @@ p span {
   }
   
   .social-links i {
-    color: white;
+    color: black;
     font-size: 3em;
     padding: 8px;
   }
