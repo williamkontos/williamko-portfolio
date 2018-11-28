@@ -9,7 +9,7 @@ export default class Contact extends Component {
       <div className="contact-body animated fadeIn">
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h2>William Kontos</h2>
+            <h2 className="william">William Kontos</h2>
             <h6>(Brandy tax)</h6>
             <img 
               src={brandy}
