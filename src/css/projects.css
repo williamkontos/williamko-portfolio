@@ -9,10 +9,14 @@
   font-weight: bold;
 }
 
-.whereto-card, .nba-card {
+.whereto-card, .nba-card, .collab-card {
   flex-basis: 25%;
   border-radius: 10px;
   animation: float 3.5s ease-in-out infinite;
+}
+
+.card-text {
+  margin: 0 auto;
 }
 
 @keyframes float {
@@ -36,7 +40,7 @@
   margin: 5em;
 }
 
-.votersim-card, .mortalkombat-card {
+.votersim-card, .mortalkombat-card, .tennis-card {
   flex-basis: 25%;
   border-radius: 10px;
   animation: float 3.5s ease-in-out infinite;
@@ -105,7 +109,7 @@
     margin: 2em;
   }
   
-  .votersim-card, .mortalkombat-card {
+  .votersim-card, .mortalkombat-card, .tennis-card {
     width: 80%;
     height: 300px !important;
     border-radius: 10px;

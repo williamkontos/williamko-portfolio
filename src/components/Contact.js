@@ -20,7 +20,7 @@ export default class Contact extends Component {
           </Cell>
           <Cell col={6}>
             <h2>Contact Me</h2>
-            <hr/>
+            <hr className="under-about" style={ {borderTop: '3px solid #2C5364'} }/>
             <div className="contact-list">
               <List>
                 <ListItem>
@@ -33,6 +33,18 @@ export default class Contact extends Component {
                   <ListItemContent className="icon" >
                       <i className="fas fa-envelope" aria-hidden="true"/>
                       <Mailto className="email" email="williamjkontos@gmail.com" headers={{subject:'Question from the website'}} />
+                  </ListItemContent>                
+                </ListItem>
+                <ListItem>
+                  <ListItemContent className="icon" >
+                      <i className="fab fa-linkedin" aria-hidden="true"/>
+                      <a className="linked-in" href="https://www.linkedin.com/in/william-kontos-31098454/" target="_blank">williamkontos</a>
+                  </ListItemContent>                
+                </ListItem>
+                <ListItem>
+                  <ListItemContent className="icon" >
+                      <i className="fab fa-github-square" aria-hidden="true"/>
+                      <a className="linked-in" href="https://github.com/williamkontos" target="_blank">show me the code</a>
                   </ListItemContent>                
                 </ListItem>
               </List>

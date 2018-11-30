@@ -18,7 +18,7 @@ export default class Resume extends Component {
               </div>
               <div className="resume-titles">
                 <h2>William Kontos</h2>
-                <h4>Web Developer</h4>
+                <h4 className="professions">Web Developer | Audio Engineer | Musician</h4>
               
                 <hr className="above-about" style={ {borderTop: '3px solid #2C5364'} }/>
                 
@@ -38,7 +38,7 @@ export default class Resume extends Component {
                   I aspire to <strong>design and build interactive and elegant web apps.</strong>
                   <br/> 
                   The desire to create something from nothing drives me to no end. <br/>
-                  Picking the right tools for the job and learning by getting my hands dirty is has proven to be the most effective path to improvement in my development journey. 
+                  Picking the right tools for the job and learning by getting my hands dirty has proven to be the most effective way to improve my skills in development. 
                 </p>
                 <hr className="under-about" style={ {borderTop: '3px solid #2C5364'} }/>
                 
